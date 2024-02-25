@@ -1,21 +1,14 @@
 ---
 layout: post
-title:  "Sports"
+title:  "Digital Strategy With Web Scrapping"
 date:   2024-02-24
-description: This is a post was provided by the template to show how to format different parts of the blog post in markdown.
+description: Web Scraping allows for the collection of data on specific websites and can generate valuable insights for your business. Learn all about the subject in this post!
+
 ---
 
 # Discover what Web Scraping is and how it can help your digital strategy
 
-There is no room for guesswork in Digital Marketing. Anything not based on data has the potential to offer more harm than benefits. And that's not a risk you want to take.
-
-Fortunately, there is an increasing volume of information that helps us make smart and agile marketing decisions.
-
-But what if the information you're looking for is outdated? What if the websites you want to research and learn from don't reveal much data?
-
-This is where Web Scraping comes in, a technique widely used to boost businesses worldwide but still unknown to many marketing professionals.
-
-In this article, we'll cover everything you need to know about Web Scraping, from its benefits to the steps to apply it, without forgetting the necessary precautions. Check it out!
+Most stats students want to enter data science world because they want to work with sports, me inclueded, but I thought in give a search in how we could use one of the tools I learned in class in a area I was not familiar with, so I decided to go to digital startegy since this is my weakest area of knowledge and see what I could learn from it and share it with you all. 
 
 ## 5 benefits of Web Scraping for your digital strategy
 
@@ -66,6 +59,9 @@ They examine data from web pages and offer important information about them, suc
 This shows how relevant the practice is for performing specific tasks, such as discovering good guest post partners, what topics to talk about on your blog, or even discovering the email of a potential partner.
 
 ## Precautions you need to take when applying Web Scraping to your strategy
+<figure>
+	<img src="{{site.url}}/{{site.baseurl}}/assets/img/privacy.jpg" alt=""> 
+</figure>
 
 Now we need to talk about the ethical and legal limits of Web Scraping. First of all, it must be said that the practice is not illegal in itself.
 
@@ -82,24 +78,22 @@ The fact is that many websites have specific policies and actions to prohibit or
 
 ## How to apply Web Scraping: 4 simple steps
 
-If you've made it this far, it's because you're convinced that giving Web Scraping a chance is a good idea. But how do you put data extraction into practice?
-
 It's easier than many think. Nowadays, you don't even need to know how to program or hire a development professional just for that.
 
 There are quality tools that do all the work in a short time, and you just need to learn how to set them up.
 
 The idea here is not to give a complete tutorial on how to use each tool, but to give you a direction to follow and indicate what are the right steps you need to take to execute Web Scraping correctly. Basically, there are 4 steps:
 
-1. **Find the right tools**
+1. #### Find the right tools
 
 There are many Web Scraping tools, both free and paid. In this post, we won't focus on tools that perform specific tasks, such as the ones mentioned above.
 
 The focus will be on those that allow for a more "artisanal" and personalized process, which you can shape as you prefer. Here are some good options:
 
-- Webscraper.io: It offers two options, a free extension for Chrome and a complete cloud-based extraction tool;
-- Import.io: SaaS platform (by subscription) with robust extraction solutions.
+- [Webscraper.io](https://webscraper.io/): It offers two options, a free extension for Chrome and a complete cloud-based extraction tool;
+- [Import.io](Import.io): paid subscription with good options.
 
-2. **Identify the sites you want to analyze**
+2. #### Identify the sites you want to analyze
 
 After choosing your tool, just choose which site you want to analyze and start setting it up according to the tool's parameters.
 
@@ -107,16 +101,11 @@ Webscraper, mentioned above, requires no knowledge of code, as it is a completel
 
 This way, you can quickly configure everything you want to collect. After that, just let the bot do its job and wait for the next step, which we'll see now.
 
-3. **Save the data to a spreadsheet or management system**
+3. #### Save the data to a spreadsheet or management system
 
 It is important that you have a good Excel spreadsheet ready, according to the parameters you want to analyze. So, when you have the data, just export it to this spreadsheet, and it will do the calculations automatically.
 
-If you don't know Excel, you'll like to know these blog resources to learn how to create your spreadsheet:
-
-- how to use Excel;
-- 15 Excel formulas and shortcuts.
-
-4. **Analyze the information in search of what you want**
+4. #### Analyze the information in search of what you want
 
 Last but not least, it's time to analyze the data and find the patterns they indicate.
 
