@@ -5,10 +5,13 @@ date:   2024-02-24
 description: Web Scraping allows for the collection of data on specific websites and can generate valuable insights for your business. Learn all about the subject in this post!
 
 ---
+<div style="background-color: #f0f0f0; padding: 10px;">
+<h2 style="color: #333; font-family: Arial, sans-serif;">Unleash Your Creativity: Data Science Made Beautiful</h2>
+</div>
 <figure>
 	<img src="{{site.url}}/{{site.baseurl}}/assets/img/web.png" alt=""> 
 </figure>
-## Discover how Web Scraping can help your digital strategy
+## Discover how Web Scraping can help your digital marketing strategy
 
 Most stats students want to enter data science world because they want to work with sports, me inclueded, but I thought in give a search in how we could use one of the tools I learned in class in a area I was not familiar with, so I decided to go to digital startegy since this is my weakest area of knowledge and see what I could learn from it and share it with you all. 
 
@@ -107,17 +110,8 @@ This way, you can quickly configure everything you want to collect. After that, 
 
 #### 4-Analyze the information in search of what you want
 
-Last but not least, it's time to analyze the data and find the patterns they indicate.
-
-This is the moment to understand what your competitors do well, how this can be used in your strategy, and many other relevant details.
-
-Then, just repeat the process with as many sites as you want and compare them with your own results to draw new insights and improve your marketing constantly.
-
-Web Scraping is an old and widely used tactic, but it still goes unnoticed by many professionals, even the most experienced ones.
-
-Although it requires some care, this data extraction technique can transform your digital strategy and increase your productivity, without much effort.
+Last but not least, it's time to analyze the data and find the patterns they indicate through your own analysis or by service. This process can be repeate this process to get a big sample and better create how to approach the market.
 
 ### Conclusion
 
-Web Scrapping is amazing and it can be applied in any field, my recommendation is to study it well, look for areas where it's used and you are not very familiar with like for me was digital strategy and I promise you won't regret it, because the greatest ideas come from unexpected places.
-
+Web Scrapping is amazing and it can be applied in any field, my recommendation is to study it well, look for areas where it's used and you are not very familiar with like for me was digital marketing and I promise you won't regret it, because the greatest ideas come from unexpected places.
