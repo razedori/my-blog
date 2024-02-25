@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Digital Strategy With Web Scraping"
+title: <h2 style="color: #FFA500; font-family: Arial, sans-serif;">Unleash Your Creativity: Data Science Made Beautiful</h2>
 date:   2024-02-24
 description: Web Scraping allows for the collection of data on specific websites and can generate valuable insights for your business. Learn all about the subject in this post!
 
