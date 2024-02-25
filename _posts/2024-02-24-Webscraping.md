@@ -110,11 +110,9 @@ This way, you can quickly configure everything you want to collect. After that, 
 
 Last but not least, it's time to analyze the data and find the patterns they indicate through your own analysis or by service. This process can be repeated this process to get a big sample and better create how to approach the market.
 
-Here's an example that I found and liked that was comparing the impact that awards have on the search for movies just because they were nominated 
 
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3620_RC01/embed_loader.js"></script> <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"/g/11j6xy0bd6","geo":"US","time":"2023-10-24 2024-02-24"},{"keyword":"/g/11sy2zysm7","geo":"US","time":"2023-10-24 2024-02-24"}],"category":0,"property":""}, {"exploreQuery":"date=2023-10-24%202024-02-24&geo=US&q=%2Fg%2F11j6xy0bd6,%2Fg%2F11sy2zysm7&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 
-and here we can compare in yellow the movie The Holdovers where we see a peak on the January 8th because it was when they had the Golden Globes and the movie received multiple awards that night so the interest of the public grew more than the other movies that were also nominated but didn't receive the same praise by the organization and apparently of the public as well
+Here's an example that I found and liked that was comparing the impact that awards have on the search for movies just because they were nominated. Also here we can compare in yellow the movie The Holdovers where we see a peak on the January 8th because it was when they had the Golden Globes and the movie received multiple awards that night so the interest of the public grew more than the other movies that were also nominated but didn't receive the same praise by the organization and apparently of the public as well
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3620_RC01/embed_loader.js"></script>
 <script type="text/javascript">
