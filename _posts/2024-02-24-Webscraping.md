@@ -110,7 +110,7 @@ This way, you can quickly configure everything you want to collect. After that, 
 
 Last but not least, it's time to analyze the data and find the patterns they indicate through your own analysis or by service. This process can be repeated this process to get a big sample and better create how to approach the market.
 
-Here's an example that I found and would like to share, this graph comparing the interest for 3 movies for the past 5 months. What I discovered is the relevance that awards have on the search for movies just because they were nominated. Also here we can compare in yellow the movie The Holdovers where we see a peak on the January 8th because it was when they had the Golden Globes and the movie received multiple awards that night so the interest of the public grew more than the other movies that were also nominated but didn't receive the same praise by the organization and apparently of the public as well.
+Here's an example that I found and would like to share, this graph comparing the interest for 3 movies for the past 5 months. What I discovered is the relevance that awards have on the search for movies just because they were nominated. Also here we can compare in yellow the movie The Holdovers where we see a peak on the January 8th because it was when they had the Golden Globes and the movie received multiple awards that night so the interest of the public grew more than the other movies that were also nominated but didn't receive the same praise by the organization and apparently of the public as well. (The graph might not work on Safari, sorry)
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3620_RC01/embed_loader.js"></script>
 <script type="text/javascript">
