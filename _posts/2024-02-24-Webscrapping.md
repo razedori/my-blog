@@ -82,7 +82,7 @@ The fact is that many websites have specific policies and actions to prohibit or
 
 ## How to apply Web Scraping: 4 simple steps
 
- #### 1-Find the right tools
+#### 1-Find the right tools
 
 If you are a stats student you should know (or will) how to use python to do the web scraping. But I would like to show you some other alternatives for those that don;t know how to program or just don;t want to.
 
@@ -119,5 +119,5 @@ Although it requires some care, this data extraction technique can transform you
 
 ### Conclusion
 
-Web Scrapping is amazing and can be applied in any field, my recommendation is to study it well, look different areas where it's used and I promise you won't regret it, because the greatest ideas come from unexpected places.
+Web Scrapping is amazing and it can be applied in any field, my recommendation is to study it well, look for areas where it's used and you are not very familiar with like for me was digital strategy and I promise you won't regret it, because the greatest ideas come from unexpected places.
 
