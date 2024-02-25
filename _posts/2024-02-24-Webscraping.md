@@ -5,9 +5,7 @@ date:   2024-02-24
 description: Web Scraping allows for the collection of data on specific websites and can generate valuable insights for your business. Learn all about the subject in this post!
 
 ---
-<div style="background-color: #f0f0f0; padding: 10px;">
-<h2 style="color: #333; font-family: Arial, sans-serif;">Unleash Your Creativity: Data Science Made Beautiful</h2>
-</div>
+
 <figure>
 	<img src="{{site.url}}/{{site.baseurl}}/assets/img/web.png" alt=""> 
 </figure>
