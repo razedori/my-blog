@@ -7,6 +7,7 @@ image: "/assets/img/cinema.jpeg"
 image2: "/assets/img/letterboxd.png"
 display_image2: true  # change this to true to display the image below the banner 
 ---
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/letterboxd.png"/>
 <p class="intro"><span class="dropcap">T</span>his post will describe how to create a blog post with the proper naming conventions, as well as tips for including images and links.  At the end there is a troubleshooting guide that can help with the most common problems .</p>
 
 ### Before, what is Letterboxd?
