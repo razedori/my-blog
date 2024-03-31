@@ -32,8 +32,10 @@ As a disclaimer all the steps were done in a mac computer, so if something looks
 ## Web Scraping
 
 ### Step 1: Knowing what you want 
-Letterboxd keeps your data in 3 main places: Films, Diary, Reviews
+Letterboxd keeps your data in 3 main places: Films(Watched), Diary, Reviews
+<figure>
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/lists.png" allign="middle"/>
+</figure>
 
 All 3 will lead to different paths depending in what data you want to collect for me I wanted to answer 3 questions: What decade has the highest rating? What decade has the lowest rating? and What day of the week I watch most movies?
 
