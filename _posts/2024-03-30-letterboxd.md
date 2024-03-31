@@ -109,9 +109,10 @@ datetime (import datetime):
 The datetime module provides classes for manipulating dates and times in Python. It's used in this script to parse and format dates extracted from the webpage.
 
 
+<nav id="step3">
+</nav>
 
 ### Step 3: Setting variables
-<nav id="step3">
 Because we are web scraping we need to get all the data from a website and through the websriver is how we can access the website to read in our Python code and then get the information we need. The code to read the website is:
 <div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
@@ -150,8 +151,7 @@ current_page = 1
 
 To be able to find the XPATH, or in other words the path that will make the code know how go to the next page we need to inspect and witht he mouse find the sector where the pages are like in the image below and you'll see the name on the right an that's the name you use in the code.
 
-image
-</nav>
+
 
 ### Step 4: Definitions
 
