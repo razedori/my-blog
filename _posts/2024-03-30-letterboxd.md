@@ -1,26 +1,31 @@
 ---
 layout: post
-title:  "Leteerboxd"
+title:  "Enhancing your Letterboxd experience"
 date: 2024-03-30
-description: A sample post with instructions and tips on how to create a new blog post.   
-image: "/assets/img/image5.jpg"
-display_image: false  # change this to true to display the image below the banner 
+description: Letterboxd already is the favorite platform for movie lovers, what if we could make the experience even better and free?  
 ---
 <p class="intro"><span class="dropcap">T</span>his post will describe how to create a blog post with the proper naming conventions, as well as tips for including images and links.  At the end there is a troubleshooting guide that can help with the most common problems .</p>
 
-### Steps for creating a new post.  
+### Before, what is Letterboxd?
 
-1. Create a new file in the `_posts` folder called `YYYY-MM-DD-post-name.md`, where YYYY is the year (2024), MM numeric month (01-12), and DD is the numeric day of the month (01-31).  The `post-name` is a short name for the new post with `-` between words.  **You must use this name convention for all new posts.**  
+Letterboxd has emerged as a cultural phenomenon, captivating both avid moviegoers and casual viewers with its revolutionary platform. Its blend of practicality and charming format has reshaped the movie-watching experience. Nowadays, it's common to observe movie enthusiasts instinctively reaching for their phones post-screening to share their ratings and opinions. This behavior has not only garnered widespread attention but has also fueled the app's word-of-mouth promotion.
 
-2. Make the YML heading.  All pages in the site need to start with a YML heading.  For posts you should use the following header:
-```
----
-layout: post
-title:  "Post Name"
-description: Short yet informative description
-image: /assets/img/blog-image.jpg
----
-```
+Beyond its functionality in tracking watched movies, ratings, and comments, Letterboxd serves as a vibrant social hub. Here, users can engage with friends and prominent content creators, gaining insights into their viewing habits and perspectives on films. In my view, Letterboxd stands as an indispensable tool for anyone passionate about cinema.
+
+
+### Intro
+
+As you might have guessed, I'm an avid fan of Letterboxd. And as a Data Science student, my love for statistics is undeniable. Surely, you've experienced the joy of receiving your personalized Spotify Wrapped at the year's end. Well, Letterboxd offers a similar treat. Every first week of the year, they unveil your personalized page brimming with stats from the past year. But wouldn't it be thrilling to track your movie-watching stats throughout the year? Absolutely! Regrettably, this feature is exclusive to paid subscribers.
+
+However, fear not! Armed with Python skills and the art of web scraping, there's a workaround. While I won't divulge my own findings here, I'm more than willing to impart the knowledge of how to delve into your movie data. Let's embark on this journey together, unlocking the potential of your cinematic adventures.
+
+
+### Step 1: Knowing what you want 
+Letterboxd keeps your data in 3 main places: Films, Diary, Reviews
+All 3 will lead to different paths depending in what data you want to collect for me I wanted to answer 3 questions: What decade has the highest rating? What decade has the lowest rating? and What day of the week I watch most movies?
+
+Based off these 3 questions "Films" will attend best my necesseties since is where all the movies I've seen are storaged and I can answer these 3 questions.
+
 *For this theme, the layout should stay as `post`.   All the other fields should be updated with the information for your particular blog post.*
 
 3. If you add an image to the header information, the top banner picture will change for this post.  You can also add an optional field `display_image: true` if you want to display a larger image just below the header image.  If this happens, the banner image will return to the default.
