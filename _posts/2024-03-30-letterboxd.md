@@ -24,7 +24,7 @@ As you might have guessed, I'm an avid fan of Letterboxd. And as a Data Science 
 However, fear not! Armed with Python skills and the art of web scraping, there's a workaround. While I won't divulge my own findings here, I'm more than willing to impart the knowledge of how to delve into your movie data. Let's embark on this journey together, unlocking the potential of your cinematic adventures.
 
 ### Tools
-I used Python and webs scraping since the website does not have API open to the public, since they are currently in closed beta. I read the terms and they even have an option to export your data and since we are not using this practice for commercial purposes we are good to get our own data from the website.
+I used Python and web scraping since the website does not have API open to the public, since they are currently in closed beta. I read the terms and they even have an option to export your data and since we are not using this practice for commercial purposes we are good to get our own data from the website.
 
 As a disclaimer all the steps were done in a mac computer, so if something looks different it might be because of the different systems.
 
@@ -40,18 +40,20 @@ If you are using the Films page I highly recommend change the view setting for l
 ### Step 2: Organizing 
 
 These are the libraries I used for this project:
-{%- highlight python -%}
-import pandas as pd
-from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
-import time
-import re
-import datetime
-{%- endhighlight -%}
+{% raw %} 
+code:
+  - import pandas as pd
+  - from bs4 import BeautifulSoup
+  - from selenium import webdriver
+  - from selenium.webdriver.chrome.service import Service as ChromeService
+  - from webdriver_manager.chrome import ChromeDriverManager
+  - from selenium.webdriver.common.by import By
+  - from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
+  - import time
+  - import re
+  - import datetime
+{% endraw %}
+
 
 If you are new to web scraping the following part will be helpful, otherwise click here to go to the next step.
 
