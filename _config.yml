@@ -2,9 +2,9 @@
 ## to customize your blog
 
 title: Stat 386 Blog
-description: "This description of the blog will appear on the 'About' page." 
-author: Your name
-author_description: "This description of who you are will appear on the 'About' page." 
+description: "Future Blog about sports data" 
+author: Gabriel Almeida
+author_description: "Data Science Student at BYU" 
 
 url: https://razedori.github.io ## change this to https://yourusername.github.io
 baseurl: /my-blog ## change this to the name of your blog repository
@@ -12,7 +12,7 @@ header_image: /assets/img/headerimg.jpg ## change your header image if you want
 
 ## Add your social media user names.  Github is required, the rest are optional
 social:
-    github:  ## required
+    github:  https://github.com/razedori ## required
     twitter: 
     facebook: 
     email: 
