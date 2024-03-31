@@ -23,11 +23,13 @@ As you might have guessed, I'm an avid fan of Letterboxd. And as a Data Science 
 
 However, fear not! Armed with Python skills and the art of web scraping, there's a workaround. While I won't divulge my own findings here, I'm more than willing to impart the knowledge of how to delve into your movie data. Let's embark on this journey together, unlocking the potential of your cinematic adventures.
 <hr>
+
 ### Tools
 I used Python and web scraping since the website does not have API open to the public, since they are currently in closed beta. I read the terms and they even have an option to export your data and since we are not using this practice for commercial purposes we are good to get our own data from the website.
 
 As a disclaimer all the steps were done in a mac computer, so if something looks different it might be because of the different systems.
 <hr>
+
 ## Web Scraping
 
 ### Step 1: Knowing what you want 
@@ -40,12 +42,11 @@ Based off these 3 questions "Films" will attend best my necessities since is whe
 
 If you are using the Films page I highly recommend change the view setting for large, that way you also have the last time you watched that movie variable.
 <figure>
-  <center>
-    <img src="{{site.url}}/{{site.baseurl}}/assets/img/view.png" style="width:500px"/>
+  <img src="{{site.url}}/{{site.baseurl}}/assets/img/view.png" style="width:500px" allign="middle"/>
 
-    <figcaption>On the left we have the regular view option and without the date. On the right with the large view option and now with the date</figcaption>
-  </center>
+  <figcaption>On the left we have the regular view option and without the date. On the right with the large view option and now with the date</figcaption>
 </figure>
+
 ### Step 2: Organizing 
 
 These are the libraries I used for this project:
@@ -108,6 +109,7 @@ datetime (import datetime):
 The datetime module provides classes for manipulating dates and times in Python. It's used in this script to parse and format dates extracted from the webpage.
 
 <section id="step3">
+
 ### Step 3: Setting vareables
 
 Because we are web scraping we need to get all the data from a website and through the websriver is how we can access the website to read in our Python code and then get the information we need. The code to read the website is:
