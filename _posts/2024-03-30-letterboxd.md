@@ -10,7 +10,6 @@ display_image2: true  # change this to true to display the image below the banne
 
 ### Wait! What is Letterboxd?
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/letterboxd.png"/>
-
 Letterboxd has emerged as a <a href="https://www.washingtonpost.com/style/of-interest/2023/12/18/letterboxd-fans-movies/" target="_blank">cultural phenomenon</a>, captivating both avid moviegoers and casual viewers with its revolutionary platform. Its blend of practicality and charming format has reshaped the movie-watching experience. Nowadays, it's common to observe movie enthusiasts instinctively reaching for their phones post-screening to share their ratings and opinions. This behavior has not only garnered widespread attention but has also fueled the app's word-of-mouth promotion.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/year-review.png" style="width:500px"/>
 
@@ -34,7 +33,7 @@ As a disclaimer all the steps were done in a mac computer, so if something looks
 
 ### Step 1: Knowing what you want 
 Letterboxd keeps your data in 3 main places: Films, Diary, Reviews
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/lists.png"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/lists.png" allign="middle"/>
 
 All 3 will lead to different paths depending in what data you want to collect for me I wanted to answer 3 questions: What decade has the highest rating? What decade has the lowest rating? and What day of the week I watch most movies?
 
@@ -149,6 +148,11 @@ current_page = 1
 {%- endhighlight -%}
 </div>
 
+<figure>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/html.png" style="width:800px" allign="middle"/>
+<figcaption>here what we are looking for when searching for a specific part on a page</figcaption>
+</figure>
+
 To be able to find the XPATH, or in other words the path that will make the code know how go to the next page we need to inspect and witht he mouse find the sector where the pages are like in the image below and you'll see the name on the right an that's the name you use in the code.
 
 
@@ -162,6 +166,7 @@ def extract_release_year(movie):
     soup = BeautifulSoup(movie.get_attribute("outerHTML"), 'html.parser')
     year_tag = soup.find('span', class_='frame-title')
 
+# checking if the movie has a year tag
     if year_tag:
         year_text = year_tag.get_text()
         
@@ -174,7 +179,7 @@ def extract_release_year(movie):
     else:
         return 'N/A'
 
-
+# converting the rating stars to numbers
 def convert_rating_to_numeric(rating_text):
     
     rating_mapping = {
@@ -304,6 +309,8 @@ df.to_csv('where you want to save', index=False)
 the output should be similar to this:
  
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/table.png"/>
+
+<hr>
 
 ### Tips & Final Thoughts
 
