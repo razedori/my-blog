@@ -40,7 +40,7 @@ If you are using the Films page I highly recommend change the view setting for l
 ### Step 2: Organizing 
 
 These are the libraries I used for this project:
-<div style="max-width: 600px; margin: 0 auto;">
+<div style="max-width: 800px; margin: 0 auto;">
     {% highlight python %}
     import pandas as pd
     from bs4 import BeautifulSoup
