@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Enhancing your Letterboxd experience"
+image: "/assets/img/letterboxd.png"
 date: 2024-03-30
 description: Letterboxd already is the favorite platform for movie lovers, what if we could make the experience even better and free?  
 ---
