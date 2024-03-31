@@ -40,20 +40,20 @@ If you are using the Films page I highly recommend change the view setting for l
 ### Step 2: Organizing 
 
 These are the libraries I used for this project:
-{% raw %} 
-code:
-  - import pandas as pd
-  - from bs4 import BeautifulSoup
-  - from selenium import webdriver
-  - from selenium.webdriver.chrome.service import Service as ChromeService
-  - from webdriver_manager.chrome import ChromeDriverManager
-  - from selenium.webdriver.common.by import By
-  - from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
-  - import time
-  - import re
-  - import datetime
-{% endraw %}
-
+<div style="max-width: 600px; margin: 0 auto;">
+    {% highlight python %}
+    import pandas as pd
+    from bs4 import BeautifulSoup
+    from selenium import webdriver
+    from selenium.webdriver.chrome.service import Service as ChromeService
+    from webdriver_manager.chrome import ChromeDriverManager
+    from selenium.webdriver.common.by import By
+    from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
+    import time
+    import re
+    import datetime
+    {% endhighlight %}
+</div>
 
 If you are new to web scraping the following part will be helpful, otherwise click here to go to the next step.
 
