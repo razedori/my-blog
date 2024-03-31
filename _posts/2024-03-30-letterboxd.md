@@ -12,7 +12,7 @@ display_image2: true  # change this to true to display the image below the banne
 
 ### Before, what is Letterboxd?
 
-Letterboxd has emerged as a cultural phenomenon, captivating both avid moviegoers and casual viewers with its revolutionary platform. Its blend of practicality and charming format has reshaped the movie-watching experience. Nowadays, it's common to observe movie enthusiasts instinctively reaching for their phones post-screening to share their ratings and opinions. This behavior has not only garnered widespread attention but has also fueled the app's word-of-mouth promotion.
+Letterboxd has emerged as a <a href="https://www.washingtonpost.com/style/of-interest/2023/12/18/letterboxd-fans-movies/" target="_blank">cultural phenomenon</a>, captivating both avid moviegoers and casual viewers with its revolutionary platform. Its blend of practicality and charming format has reshaped the movie-watching experience. Nowadays, it's common to observe movie enthusiasts instinctively reaching for their phones post-screening to share their ratings and opinions. This behavior has not only garnered widespread attention but has also fueled the app's word-of-mouth promotion.
 
 Beyond its functionality in tracking watched movies, ratings, and comments, Letterboxd serves as a vibrant social hub. Here, users can engage with friends and prominent content creators, gaining insights into their viewing habits and perspectives on films. In my view, Letterboxd stands as an indispensable tool for anyone passionate about cinema.
 
