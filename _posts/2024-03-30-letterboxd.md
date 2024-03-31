@@ -7,10 +7,9 @@ image: "/assets/img/cinema.jpeg"
 image2: "/assets/img/letterboxd.png"
 display_image2: true  # change this to true to display the image below the banner 
 ---
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/letterboxd.png"/>
-<p class="intro"><span class="dropcap">T</span>his post will describe how to create a blog post with the proper naming conventions, as well as tips for including images and links.  At the end there is a troubleshooting guide that can help with the most common problems .</p>
 
-### Before, what is Letterboxd?
+### What is Letterboxd?
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/letterboxd.png"/>
 
 Letterboxd has emerged as a <a href="https://www.washingtonpost.com/style/of-interest/2023/12/18/letterboxd-fans-movies/" target="_blank">cultural phenomenon</a>, captivating both avid moviegoers and casual viewers with its revolutionary platform. Its blend of practicality and charming format has reshaped the movie-watching experience. Nowadays, it's common to observe movie enthusiasts instinctively reaching for their phones post-screening to share their ratings and opinions. This behavior has not only garnered widespread attention but has also fueled the app's word-of-mouth promotion.
 
@@ -31,12 +30,17 @@ As a disclaimer all the steps were done in a mac computer, so if something looks
 
 ### Step 1: Knowing what you want 
 Letterboxd keeps your data in 3 main places: Films, Diary, Reviews
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/lists"/>
 All 3 will lead to different paths depending in what data you want to collect for me I wanted to answer 3 questions: What decade has the highest rating? What decade has the lowest rating? and What day of the week I watch most movies?
 
 Based off these 3 questions "Films" will attend best my necessities since is where all the movies I've seen are storaged and I can answer these 3 questions.
 
 If you are using the Films page I highly recommend change the view setting for large, that way you also have the last time you watched that movie variable.
+<figure>
 
+  <img src="{{site.url}}/{{site.baseurl}}/assets/img/view.png"/>
+  <figcaption>On the left we have the regular view option and without the date. On the right with the large view option and now with the date</figcaption>
+</figure>
 ### Step 2: Organizing 
 
 These are the libraries I used for this project:
@@ -69,10 +73,12 @@ selenium (from selenium import webdriver):
 Selenium is a powerful tool for web automation. It allows you to interact with web browsers programmatically, enabling tasks such as navigating pages, filling forms, and scraping dynamic content. In this script, Selenium is used to automate the web browser (Chrome) for navigating Letterboxd and extracting movie data.
 
 to install selinium if you haven't, open terminal and run the following line
+<div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
 pip install selenium
 {%- endhighlight -%}
 Once installed you can use selenium on Python
+</div>
 
 ChromeService (from selenium.webdriver.chrome.service import Service as ChromeService):
 This module is used to customize and control the Chrome browser service. In this script, it's used to initialize the Chrome browser service for Selenium.
@@ -100,6 +106,7 @@ The datetime module provides classes for manipulating dates and times in Python.
 ### Step 3: Setting vareables
 
 Because we are web scraping we need to get all the data from a website and through the websriver is how we can access the website to read in our Python code and then get the information we need. The code to read the website is:
+<div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
@@ -109,8 +116,10 @@ url = 'https://letterboxd.com/razedori/films/by/date/size/large/'
 # Load the initial page, this will make the page open so don't be scared once the page pops
 driver.get(url)
 {%- endhighlight -%}
+</div>
 
 now we can name the variables for the information we want to collect
+<div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
 # Initialize lists to store data
 movie_title = []
@@ -120,14 +129,17 @@ movie_liked = []
 # Last time I watched the movie
 movie_watchdate = [] 
 {%- endhighlight -%}
+</div>
 
 And Because we want to be able to scrape data from every page in the "Films" section and I currently have 100 pages we need to set our current page and last page because later when we do our loop this will make sure we go through each page in the process:
+<div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
 pagination = driver.find_element(By.XPATH, ".//div[contains(@class, 'paginate-pages')]/ul")
 last_page = pagination.find_elements(By.XPATH, ".//li[@class='paginate-page']")[-1].text
 
 current_page = 1
 {%- endhighlight -%}
+</div>
 
 To be able to find the XPATH, or in other words the path that will make the code know how go to the next page we need to inspect and witht he mouse find the sector where the pages are like in the image below and you'll see the name on the right an that's the name you use in the code.
 
@@ -136,6 +148,7 @@ image
 ### Step 4: Definitions
 
 Due to some dificulties I had to use definitions to be able to scrape the data that I wanted each for a specific reason. The code:
+<div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
 def extract_release_year(movie):
     soup = BeautifulSoup(movie.get_attribute("outerHTML"), 'html.parser')
@@ -189,10 +202,12 @@ def extract_watch_day_of_week(watch_date_text):
     return datetime.datetime.strptime(watch_date_text, "%B %d, %Y").strftime("%A")
 
 {%- endhighlight -%}
+</div>
 
 ### Step 5: Looping
 
-Here's where the magic happens, because in the same page we have different movies and we have multiple pages I created a loop to get all the data we need page by page, one advice I give you is to add delay because most of my problems were that the loop was faster than the reading so some movies got skipped in the process, but with the delay everything worked
+Here's where the magic happens, because in the same page we have different movies and we have multiple pages I created a loop to get all the data we need page by page, one advice I give you is to add delay because most of my problems were that the loop was faster than the reading so some movies got skipped in the process, but with the delay everything worked well.
+<div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
 while current_page <= int(last_page):
     container = driver.find_element(By.CLASS_NAME, 'poster-list.-p150.-grid.film-list.clear')
@@ -256,12 +271,14 @@ while current_page <= int(last_page):
 driver.quit()
 
 {%- endhighlight -%}
+</div>
 
 This process might take a while, for me it took an average of 4 minutes, so depending of how many pages you have on your profile time may vary.
 
 ### Step 6: Final Data
 
 Our last step is to organize the data we collected and also add a new column that will get the date we last watched the movie and convert to the day of the week, that way we can later to an analysis with the days of the week in a later post. 
+<div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
 df = pd.DataFrame({
     'Title': movie_title,
@@ -274,22 +291,11 @@ df['watch_day_of_week'] = df['Last Time Watched'].apply(extract_watch_day_of_wee
 # Here we the dataframe as csv file
 df.to_csv('where you want to save', index=False)
 {%- endhighlight -%}
+</div>
 
 the output should be similar to this:
  
-Title                                      Release Year   Rating   Liked   Last Time Watched   Watch Day of Week
-Godzilla × Kong: The New Empire              2024          3        No      March 30, 2024       Saturday
-The Spider Within: A Spider-Verse Story      2023         2.5       No      March 29, 2024       Friday
-Problemista                                  2023         3.5       No      March 28, 2024       Thursday
-Quiet on Set: The Dark Side of Kids TV       2024         4.5       No      March 25, 2024       Monday
-Late Night with the Devil                    2023          4        No      March 24, 2024       Sunday
-...                                           ...          ...       ...          ...               ...
-Arrival                                       2016         2.5       No   February 05, 2019     Tuesday
-Star Wars: The Force Awakens                  2015          4        No       May 01, 2022       Sunday
-Get Out                                       2017         4.5       No   February 05, 2019     Tuesday
-La La Land                                    2016          5       Yes     August 18, 2019       Sunday
-Mad Max: Fury Road                            2015          4        No   February 05, 2019     Tuesday
- 
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/table"/>
 
 ### Tips & Final Thoughts
 
