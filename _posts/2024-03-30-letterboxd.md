@@ -8,29 +8,30 @@ image2: "/assets/img/letterboxd.png"
 display_image2: true  # change this to true to display the image below the banner 
 ---
 
-### What is Letterboxd?
+### Wait! What is Letterboxd?
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/letterboxd.png"/>
 
 Letterboxd has emerged as a <a href="https://www.washingtonpost.com/style/of-interest/2023/12/18/letterboxd-fans-movies/" target="_blank">cultural phenomenon</a>, captivating both avid moviegoers and casual viewers with its revolutionary platform. Its blend of practicality and charming format has reshaped the movie-watching experience. Nowadays, it's common to observe movie enthusiasts instinctively reaching for their phones post-screening to share their ratings and opinions. This behavior has not only garnered widespread attention but has also fueled the app's word-of-mouth promotion.
-
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/year-review.png" style="width:500px"/>
 Beyond its functionality in tracking watched movies, ratings, and comments, Letterboxd serves as a vibrant social hub. Here, users can engage with friends and prominent content creators, gaining insights into their viewing habits and perspectives on films. In my view, Letterboxd stands as an indispensable tool for anyone passionate about cinema.
 
 
 ### Intro
 
-As you might have guessed, I'm an avid fan of Letterboxd. And as a Data Science student, my love for statistics is undeniable. Surely, you've experienced the joy of receiving your personalized Spotify Wrapped at the year's end. Well, Letterboxd offers a similar treat. Every first week of the year, they unveil your personalized page brimming with stats from the past year. But wouldn't it be thrilling to track your movie-watching stats throughout the year? Absolutely! Regrettably, this feature is exclusive to paid subscribers.
+As you might have guessed, I'm an avid fan of Letterboxd. And as a Data Science student, my love for statistics is undeniable. Surely, you've experienced the joy of receiving your personalized <a href="https://open.spotify.com/wrapped" target="_blank">Spotify Wrapped</a> at the year's end. Well, Letterboxd offers a <a href="https://letterboxd.com/2023/#title-page" target="_blank">similar treat</a>. Every first week of the year, they unveil your personalized page brimming with stats from the past year. But wouldn't it be thrilling to track your movie-watching stats throughout the year? Absolutely! Regrettably, this feature is exclusive to paid subscribers.
 
 However, fear not! Armed with Python skills and the art of web scraping, there's a workaround. While I won't divulge my own findings here, I'm more than willing to impart the knowledge of how to delve into your movie data. Let's embark on this journey together, unlocking the potential of your cinematic adventures.
-
+<hr>
 ### Tools
 I used Python and web scraping since the website does not have API open to the public, since they are currently in closed beta. I read the terms and they even have an option to export your data and since we are not using this practice for commercial purposes we are good to get our own data from the website.
 
 As a disclaimer all the steps were done in a mac computer, so if something looks different it might be because of the different systems.
-
+<hr>
+## Web Scraping
 
 ### Step 1: Knowing what you want 
 Letterboxd keeps your data in 3 main places: Films, Diary, Reviews
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/lists"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/lists.png"/>
 All 3 will lead to different paths depending in what data you want to collect for me I wanted to answer 3 questions: What decade has the highest rating? What decade has the lowest rating? and What day of the week I watch most movies?
 
 Based off these 3 questions "Films" will attend best my necessities since is where all the movies I've seen are storaged and I can answer these 3 questions.
@@ -59,9 +60,9 @@ These are the libraries I used for this project:
     {% endhighlight %}
 </div>
 
-If you are new to web scraping the following part will be helpful, otherwise click here to go to the next step.
+If you are new to web scraping the following part will be helpful, otherwise <a href="#step3">click here</a> to go to the next step.
 
-##### The purpose of each library:
+#### The purpose of each library:
 
 pandas (import pandas as pd):
 This library is used for data manipulation and analysis. However, it doesn't seem to be used explicitly in the provided code. It might have been intended for further processing of extracted data outside the scope of this script.
@@ -102,7 +103,7 @@ The re module provides support for regular expressions in Python. It's used in t
 datetime (import datetime):
 The datetime module provides classes for manipulating dates and times in Python. It's used in this script to parse and format dates extracted from the webpage.
 
-
+<section id="step3>
 ### Step 3: Setting vareables
 
 Because we are web scraping we need to get all the data from a website and through the websriver is how we can access the website to read in our Python code and then get the information we need. The code to read the website is:
@@ -144,7 +145,7 @@ current_page = 1
 To be able to find the XPATH, or in other words the path that will make the code know how go to the next page we need to inspect and witht he mouse find the sector where the pages are like in the image below and you'll see the name on the right an that's the name you use in the code.
 
 image
-
+</section>
 ### Step 4: Definitions
 
 Due to some dificulties I had to use definitions to be able to scrape the data that I wanted each for a specific reason. The code:
@@ -295,7 +296,7 @@ df.to_csv('where you want to save', index=False)
 
 the output should be similar to this:
  
-<img src="{{site.url}}/{{site.baseurl}}/assets/img/table"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/img/table.png"/>
 
 ### Tips & Final Thoughts
 
