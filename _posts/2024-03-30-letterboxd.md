@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Enhancing your Letterboxd experience"
-image: "/assets/img/letterboxd.png"
 date: 2024-03-30
 description: Letterboxd already is the favorite platform for movie lovers, what if we could make the experience even better and free?  
+image: "/assets/img/letterboxd.png"
+display_image: true  # change this to true to display the image below the banner 
 ---
 <p class="intro"><span class="dropcap">T</span>his post will describe how to create a blog post with the proper naming conventions, as well as tips for including images and links.  At the end there is a troubleshooting guide that can help with the most common problems .</p>
 
