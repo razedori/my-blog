@@ -13,6 +13,7 @@ display_image2: true  # change this to true to display the image below the banne
 
 Letterboxd has emerged as a <a href="https://www.washingtonpost.com/style/of-interest/2023/12/18/letterboxd-fans-movies/" target="_blank">cultural phenomenon</a>, captivating both avid moviegoers and casual viewers with its revolutionary platform. Its blend of practicality and charming format has reshaped the movie-watching experience. Nowadays, it's common to observe movie enthusiasts instinctively reaching for their phones post-screening to share their ratings and opinions. This behavior has not only garnered widespread attention but has also fueled the app's word-of-mouth promotion.
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/year-review.png" style="width:500px"/>
+
 Beyond its functionality in tracking watched movies, ratings, and comments, Letterboxd serves as a vibrant social hub. Here, users can engage with friends and prominent content creators, gaining insights into their viewing habits and perspectives on films. In my view, Letterboxd stands as an indispensable tool for anyone passionate about cinema.
 
 
@@ -32,15 +33,18 @@ As a disclaimer all the steps were done in a mac computer, so if something looks
 ### Step 1: Knowing what you want 
 Letterboxd keeps your data in 3 main places: Films, Diary, Reviews
 <img src="{{site.url}}/{{site.baseurl}}/assets/img/lists.png"/>
+
 All 3 will lead to different paths depending in what data you want to collect for me I wanted to answer 3 questions: What decade has the highest rating? What decade has the lowest rating? and What day of the week I watch most movies?
 
 Based off these 3 questions "Films" will attend best my necessities since is where all the movies I've seen are storaged and I can answer these 3 questions.
 
 If you are using the Films page I highly recommend change the view setting for large, that way you also have the last time you watched that movie variable.
 <figure>
+  <center>
+    <img src="{{site.url}}/{{site.baseurl}}/assets/img/view.png" style="width:500px"/>
 
-  <img src="{{site.url}}/{{site.baseurl}}/assets/img/view.png"/>
-  <figcaption>On the left we have the regular view option and without the date. On the right with the large view option and now with the date</figcaption>
+    <figcaption>On the left we have the regular view option and without the date. On the right with the large view option and now with the date</figcaption>
+  </center>
 </figure>
 ### Step 2: Organizing 
 
@@ -103,7 +107,7 @@ The re module provides support for regular expressions in Python. It's used in t
 datetime (import datetime):
 The datetime module provides classes for manipulating dates and times in Python. It's used in this script to parse and format dates extracted from the webpage.
 
-<section id="step3>
+<section id="step3">
 ### Step 3: Setting vareables
 
 Because we are web scraping we need to get all the data from a website and through the websriver is how we can access the website to read in our Python code and then get the information we need. The code to read the website is:
