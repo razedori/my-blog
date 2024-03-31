@@ -110,8 +110,7 @@ The datetime module provides classes for manipulating dates and times in Python.
 
 <section id="step3">
 
-### Step 3: Setting vareables
-
+### Step 3: Setting variables
 Because we are web scraping we need to get all the data from a website and through the websriver is how we can access the website to read in our Python code and then get the information we need. The code to read the website is:
 <div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
@@ -125,7 +124,7 @@ driver.get(url)
 {%- endhighlight -%}
 </div>
 
-now we can name the variables for the information we want to collect
+now we can name the variables for the information we want to collect later
 <div style="max-width: 800px; margin: 0 auto;">
 {%- highlight python -%}
 # Initialize lists to store data
@@ -152,6 +151,7 @@ To be able to find the XPATH, or in other words the path that will make the code
 
 image
 </section>
+
 ### Step 4: Definitions
 
 Due to some dificulties I had to use definitions to be able to scrape the data that I wanted each for a specific reason. The code:
