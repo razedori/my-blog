@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to create a blog post"
-date: 2024-02-05
+date: 2034-02-05
 description: A sample post with instructions and tips on how to create a new blog post.   
 image: "/assets/img/image5.jpg"
 display_image: false  # change this to true to display the image below the banner 
